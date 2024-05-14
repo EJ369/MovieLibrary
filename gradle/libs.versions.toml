@@ -10,6 +10,7 @@ material = "1.12.0"
 okhttp = "4.12.0"
 retrofit = "2.11.0"
 squareupConverterGson = "2.9.0"
+maven-publish = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,4 +27,4 @@ squareup-converter-gson = { module = "com.squareup.retrofit2:converter-gson", ve
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-
+mavenpublish = { id = "com.example.maven.publish", version.ref = "maven-publish" }

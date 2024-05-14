@@ -28,15 +28,19 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    publishing {
-        /*publications {
-            create<MavenPublication>("mavenJava") {
-                from(components.java)
-                groupId = "com.example.movielibrary"
-                artifactId = "mylibrary"
-                version = "1.0.0"
+
+    afterEvaluate {
+        publishing {
+            publications {
+                create<MavenPublication>("maven") {
+                    groupId = "com.example.movielibrary"
+                    artifactId = "Movielibrary"
+                    version = "1.1"
+
+                    from(components["release"])
+                }
             }
-        }*/
+        }
     }
 }
 
