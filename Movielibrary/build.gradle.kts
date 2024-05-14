@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("maven-publish")
 }
 
 android {
@@ -26,6 +27,16 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    publishing {
+        /*publications {
+            create<MavenPublication>("mavenJava") {
+                from(components.java)
+                groupId = "com.example.movielibrary"
+                artifactId = "mylibrary"
+                version = "1.0.0"
+            }
+        }*/
     }
 }
 
