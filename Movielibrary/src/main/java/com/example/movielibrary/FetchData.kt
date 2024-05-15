@@ -6,8 +6,8 @@ import retrofit2.Call
 object FetchData {
     private val apiService = NetworkClass.apiService
 
-    fun getMovies(key: String, onSuccess: (List<Movie>) -> Unit, onFailure: (String) -> Unit) {
-        val call: Call<APIResponse> = apiService.getData(authorization = "Bearer $key")
+    fun getMovies(key: String, category: String, onSuccess: (List<Movie>) -> Unit, onFailure: (String) -> Unit) {
+        val call: Call<APIResponse> = apiService.getData(category, authorization = "Bearer $key")
 
         call.enqueue(object : retrofit2.Callback<APIResponse> {
             override fun onResponse(call: Call<APIResponse>, response: retrofit2.Response<APIResponse>) {
