@@ -35,7 +35,7 @@ android {
                 create<MavenPublication>("maven") {
                     groupId = "com.example.movielibrary"
                     artifactId = "Movielibrary"
-                    version = "1.3"
+                    version = "1.4"
 
                     from(components["release"])
                 }
