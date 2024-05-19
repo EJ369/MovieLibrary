@@ -1,1 +1,1 @@
-The library is hosted on Jitpck.io
+The library is hosted on Jitpack.io
